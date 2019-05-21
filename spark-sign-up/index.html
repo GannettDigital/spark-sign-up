@@ -31,11 +31,11 @@
 						<option value="west">WEST</option>
 						<option value="illinois">Illinois</option>
 					</select>
-					<select id="times" class="minimal times">
+					<!--<select id="times" class="minimal times">
 							<option selected value="base">Please Select Time</option>
 							<option value="am">10:00 - 11:30 a.m.</option>
 							<option value="pm">4:00 - 5:30 p.m.</option>
-						</select>
+						</select>-->
 					<div id="iowa" class="dates">
 						<h5>10:00am - 11:30am</h5>
 						<div class="wrap-input">
@@ -427,13 +427,13 @@
 	<script type="text/javascript">
 
 
-$('select').change(function(){
+$('#locations').change(function(){
 	  var locations = document.getElementById("locations");
-	  var times = document.getElementById("times");
+	  //var times = document.getElementById("times");
 		var locopts = locations.options;
-		var timeopts = times.options;
+		//var timeopts = times.options;
 		var locval = locations.options[locations.selectedIndex].value;
-		var timeval = times.options[times.selectedIndex].value;
+		//var timeval = times.options[times.selectedIndex].value;
 
 	// var dateid= document.getElementById(String(locval)+String(timeval));
 	 var dateid= document.getElementById(String(locval));
