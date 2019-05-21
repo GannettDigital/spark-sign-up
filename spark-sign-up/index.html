@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Dynamic Dropdown - designIQ</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="images/favicon.ico" rel="icon" type="image/png">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="home-form">
+		<div class="form-container">
+			<form>
+				<h1>Spark Sessions</h1>
+				<div id="page-wrap">
+					<select id="locations" class="minimal locations">
+						<option selected value="base">Please Select Location</option>
+						<option value="iowa">Iowa</option>
+						<option value="south">South</option>
+						<option value="tx">TX1</option>
+						<option value="txco">TXCO</option>
+						<option value="wi">WI</option>
+					</select>
+					<select id="times" class="minimal times">
+							<option selected value="base">Please Select Time</option>
+							<option value="am">10:00 - 11:30 a.m.</option>
+							<option value="pm">4:00 - 5:30 p.m.</option>
+						</select>
+					<div id="iowaam" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #iowaam-->
+
+					<div id="iowapm" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #iowapm-->
+
+					<div id="southam" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #southam-->
+
+					<div id="southpm" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #southpm-->
+
+					<div id="txam" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #txam-->
+
+					<div id="txpm" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #txpm-->
+
+					<div id="txcoam" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #txcoam-->
+
+					<div id="txcopm" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #txcopm-->
+
+					<div id="wiam" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #wiam-->
+
+					<div id="wipm" class="dates">
+						<div class="wrap-input">
+							<input name="monday-day-one" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="monday-day-two" type="text"> <span class="label" data-placeholder="Monday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-one" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="tuesday-day-two" type="text"> <span class="label" data-placeholder="Tuesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-one" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="wednesday-day-two" type="text"> <span class="label" data-placeholder="Wednesday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-one" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="thursday-day-two" type="text"> <span class="label" data-placeholder="Thursday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-one" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+						<div class="wrap-input">
+							<input name="friday-day-two" type="text"> <span class="label" data-placeholder="Friday"></span>
+						</div>
+					</div><!--end #wiam-->
+				</div>
+
+				<div class="button-container">
+					<button>Sign Up</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+	var locations = document.getElementById("locations");
+	var times = document.getElementById("times");
+	var locs =[];
+	var tims = [];
+
+	//function(){
+		//for (var i = 0; i < locations.length; i++) {
+		//	locs.push(i)
+		//}
+		//for (var i = 0; i < times.length; i++) {
+	//		tims.push(i)
+		//}
+
+	//	if (locations.options[0].selected = false && times.options[0].selected = false;){
+
+		//}
+//};
+
+$('select').change(function(){
+	  var locations = document.getElementById("locations");
+	  var times = document.getElementById("times");
+		var locopts = locations.options;
+		var timeopts = times.options;
+		var locval = locations.options[locations.selectedIndex].value;
+		var timeval = times.options[times.selectedIndex].value;
+
+	 var dateid= document.getElementById(String(locval)+String(timeval));
+	 var datesdiv = document.getElementsByClassName("dates");
+	 var d = datesdiv.length;
+
+	 for (i = 0; i < d; i++){
+		 if(datesdiv[i] == dateid){
+			 datesdiv[i].classList.add("datesshow");
+		 } else{datesdiv[i].classList.remove("datesshow");}
+	 }
+
+});
+
+	</script>
+</body>
+
+
+</html>
